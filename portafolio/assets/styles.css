@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font1: 'Overpass', sans-serif;
+    --font2: 'Ubuntu', sans-serif;
+    --padding-container: 20px 0;
+    --color-white: #fff;
+}
+
+header{
+    background-image: url(/assets/images/DSC06651.JPG);
+    background-size: cover ;
+    font-family: var(--font1);
+}
+
+.container{
+    width: 100%;
+    max-width: 2500px;
+    margin: 0 0;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    justify-content: space-between;
+    height: 10 px;
+    background-color: rgb(109, 109, 109);
+    padding: 2rem;
+
+}
+.hero_main{
+    text-align: center;
+    color: rgb(165, 240, 250);
+    
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero_title{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+.hero_im{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+.hero_paragraph{
+    margin-top:  3rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.hero_btns{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+}
+.hero_cta{
+    color: white;
+    text-decoration: none;
+    border: 1px solid currentColor;
+    padding: 12px 16px;
+    border-radius: 30px;
+}
+
+.image_about{
+    margin: 2rem;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: contain;
+    background-image: url(./images/DSC06975.JPG);
+    
+}
+.subtitle{
+    color: rgb(14, 12, 14);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.subtitle2{
+    color: rgb(10, 9, 9);
+    display: inline; 
+    
+}
+.subtitle3{
+    color: rgb(255, 0, 0);
+    display: inline;     
+}
+
+.about_paragraph{
+    color: rgb(8, 8, 8);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: 300; 
+}
+.social_icon_container{
+    
+    align-items: center;
+    width: 20rem;
+    }
+.social_icon_container>a>svg{
+    fill: darkred;
+    width: 2.5rem;
+    
+       
+}
+.Our_Services>.subtitle{
+    color: rgb(35, 91, 155);
+    text-align: center;
+    font-size: 2.2rem;
+}
+.Our_Services>.Our_serv_paragraph{
+    color: dimgrey;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.Our_Services>.Desarrollo_web>.subtitle{
+    color: rgb(35, 91, 155);
+    text-align: center;
+    font-size: 1.8rem;
+    }
+.Our_Services>.Desarrollo_web>.image_desarrollo>img{
+    display: block;
+    margin: auto;
+    width: 8rem;
+    margin-bottom: 5rem;
+    }
+.Our_Services>.Desarrollo_web>.ejemplos_web>img{
+        display: block;
+        margin: auto;
+        width: 20rem;
+        margin-bottom: 3rem;
+    }
+        
+.Our_Services>.Diseño_Grafico>.subtitle{
+    margin-top: 5rem;
+    color: rgb(35, 91, 155);
+    text-align: center;
+    font-size: 1.8rem;
+}
+.Our_Services>.Diseño_Grafico>.image_diseño>img{
+    display: block;
+    margin: auto;
+    width: 8rem;
+    }
+.Our_Services>.Diseño_Grafico>.ejemplos_dgrafico>img{
+    display: block;
+    margin: auto;
+    width: 20rem;
+    margin-bottom: 3rem;
+    }
+    
+.Our_Services>.Fotografia>.subtitle{
+    color: rgb(35, 91, 155);
+    text-align: center;
+    font-size: 1.8rem;
+    }
+.Our_Services>.Fotografia>.image_fotografia>img{
+    display: block;
+    margin: auto;
+    width: 8rem;
+    }
+.Our_Services>.Fotografia>.ejemplos_fotografia>img{
+    display: block;
+    margin: auto;
+    width: 20rem;
+    margin-bottom: 3rem;
+    }
+.contact_us{
+    background-color: rgb(223, 223, 223);
+}
+.contact_us>h2{
+    margin-top: 20px;
+    color:rgb(12, 12, 12);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+.contact_us>.llamar{
+    margin-top: 20px;
+    color:rgb(168, 39, 0);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.contact_us>.image_telefono>img{
+    display: block;
+    margin: auto;
+    width: 35px;
+}
+.contact_us>h3{
+    margin-top: 5px;
+    color: rgb(61, 61, 61);
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+}
+
+.contact_us>.escribeme{
+    margin-top: 20px;
+    color:rgb(168, 39, 0);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.contact_us>.image_mail>img{
+    display: block;
+    margin: auto;
+    width: 35px;
+}
+
+.contact_us>.visitame{
+    margin-top: 20px;
+    color:rgb(168, 39, 0);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.contact_us>.image_visitanos>img{
+    display: block;
+    margin: auto;
+    width: 35px;
+}
+
+*{box-sizing:border-box;}
+
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+
+
+.main{
+    padding: 2rem;
+}
